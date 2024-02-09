@@ -1,0 +1,12 @@
+[submodule ".tmux/plugins/.tmux/plugins"]
+	path = .tmux/plugins/.tmux/plugins
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tmux-sensible"]
+	path = tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tokyo-night-tmux"]
+	path = tokyo-night-tmux
+	url = https://github.com/janoamaral/tokyo-night-tmux
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm
