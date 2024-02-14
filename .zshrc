@@ -16,7 +16,10 @@ alias md='glow'
 alias zsh='nano ~/.zshrc'
 alias autorecon='env "PATH=$PATH" autorecon '
 alias hosts='nano /etc/hosts'
-alias nmapsvg='nmap-formatter dot | dot -Tsvg > tree.svg'
+
+# NMAP OUTPUT
+alias nmap2svg='nmap-formatter dot | dot -Tsvg > tree.svg'
+alias nmap2html='nmap-formatter html > nmap-scan.html'
 
 # Tools
 alias waymore='python /usr/bin/waymore.py'
