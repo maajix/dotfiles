@@ -16,12 +16,18 @@ alias md='glow'
 alias zsh='nano ~/.zshrc'
 alias autorecon='env "PATH=$PATH" autorecon '
 alias hosts='nano /etc/hosts'
+alias nmapsvg='nmap-formatter dot | dot -Tsvg > tree.svg'
 
 # Tools
 alias waymore='python /usr/bin/waymore.py'
 alias xnlinkfinder='python /usr/bin/xnLinkFinder.py'
 alias xsstrike='python /usr/bin/xsstrike.py'
 alias aqua='/usr/bin/aquatone -chrome-path /usr/bin/chrome/chrome'
+alias nabscan='naabu -stats -verify -nmap-cli "nmap -sC -sV -T4 -A -oA nmap-scan" -o naabu-scan -host $DOMAIN'
+alias mapscan='nmap -sC -sV -Pn -T4 -oA nmap-scan $DOMAIN'
+alias nfscan='nf -d $DOMAIN'
+alias nikscan='nikto -followredirects -Format htm -o nikto-scan -host https://$DOMAIN'
+
 
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
