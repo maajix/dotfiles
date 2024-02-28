@@ -14,8 +14,9 @@ alias lxcpg='sudo /opt/scripts/lxc/init_throw_away'
 alias lxcrm='sudo /opt/scripts/lxc/throw_away_shell'
 alias md='glow'
 alias zsh='nano ~/.zshrc'
-alias autorecon='env "PATH=$PATH" autorecon '
+alias autorecon='env "PATH=$PATH" autorecon'
 alias hosts='nano /etc/hosts'
+alias cldl='sudo rm -r /home/kali/Downloads && mkdir /home/kali/Downloads'
 
 # NMAP OUTPUT
 alias nmap2svg='nmap-formatter dot | dot -Tsvg > tree.svg'
@@ -30,6 +31,8 @@ alias nabscan='naabu -stats -verify -nmap-cli "nmap -sC -sV -T4 -A -oA nmap-scan
 alias mapscan='nmap -sC -sV -Pn -T4 -oA nmap-scan $DOMAIN'
 alias nfscan='nf -d $DOMAIN'
 alias nikscan='nikto -followredirects -Format htm -o nikto-scan -host https://$DOMAIN'
+alias nucscan='nuclei -target $DOMAIN -o nuclei-scan'
+alias cmsscan='cmsmap https://$DOMAIN -D -o cmsmap-scan'
 
 
 setopt autocd              # change directory just by typing its name
