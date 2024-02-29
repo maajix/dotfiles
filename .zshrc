@@ -3,7 +3,7 @@
 
 # PATH
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-PATH=$PATH:/snap/bin:/home/kali/go/bin:home/kali/.local/bin:/opt
+PATH=$PATH:/snap/bin:/home/kali/go/bin:home/kali/.local/bin:/opt:/home/kali/.cargo/bin
 
 # ALIAS
 alias sudo='sudo '
@@ -17,6 +17,9 @@ alias zsh='nano ~/.zshrc'
 alias autorecon='env "PATH=$PATH" autorecon'
 alias hosts='nano /etc/hosts'
 alias cldl='sudo rm -r /home/kali/Downloads && mkdir /home/kali/Downloads'
+
+# Proxy
+alias send2burp='parallel -j 10 curl --proxy "http://192.168.178.14:8080" -sk 2>/dev/null'
 
 # NMAP OUTPUT
 alias nmap2svg='nmap-formatter dot | dot -Tsvg > tree.svg'
